@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "version": "1.38.8",
-  "buildNumber": 76,
-  "publishedAt": "2026-09-02T14:10:02.593332+00:00",
-  "title": "Sprache 1.38.8",
+  "version": "1.38.9",
+  "buildNumber": 77,
+  "publishedAt": "2026-09-02T15:36:03.918532+00:00",
+  "title": "Sprache 1.38.9",
   "notes": [
-    "기본 학습은 뜻풀이, 뜻 보고 단어 선택, 문장 맞추기 세 가지로 간단하게 정리했습니다.",
-    "추천, 게임, 미션과 맞춤 학습은 더 많은 학습 방식 안에서 필요할 때만 펼칠 수 있습니다.",
-    "설정 첫 화면은 핵심 항목만 보이고 세부 기능은 각 항목 안에서 확인하도록 정리했습니다.",
-    "앱 정보에서 Android APK와 iPhone PWA 설치 링크를 시스템 공유창으로 함께 보낼 수 있습니다."
+    "자료 합성 결과를 캐시해 추가 메뉴와 주요 화면의 반복 계산을 줄였습니다.",
+    "전체 검색은 입력을 잠시 기다린 뒤 나누어 처리해 타이핑과 화면 조작이 멈추지 않습니다.",
+    "GitHub 언어팩 받기를 추가 메뉴와 전체 검색에서 바로 찾을 수 있습니다.",
+    "언어팩은 크기와 SHA-256을 검증한 뒤 가져오기 검토 화면으로 연결됩니다."
   ],
-  "releasePageUrl": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.8",
+  "releasePageUrl": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.9",
   "artifacts": {
     "android": {
       "kind": "apk",
-      "url": "https://github.com/youkdonghun/Sprache/releases/download/v1.38.8/Sprache-Android-1.38.8.apk",
-      "fileName": "Sprache-Android-1.38.8.apk",
-      "sha256": "734100d80052ea881b4203dacbd2706e0da406d4975a8f7e8ed44b39596f6e89",
-      "sizeBytes": 108125177
+      "url": "https://github.com/youkdonghun/Sprache/releases/download/v1.38.9/Sprache-Android-1.38.9.apk",
+      "fileName": "Sprache-Android-1.38.9.apk",
+      "sha256": "566270ca9c01e4dfeb814d1bc2d787ed7259be031d500fdae26253abedbd38c9",
+      "sizeBytes": 108141561
     },
     "windows": {
       "kind": "installer",
-      "url": "https://github.com/youkdonghun/Sprache/releases/download/v1.38.8/Sprache-Windows-Setup-1.38.8-google-x64.exe",
-      "fileName": "Sprache-Windows-Setup-1.38.8-google-x64.exe",
-      "sha256": "837b4a3f4b878ac78ff41c08c3791ec03cb63af005e1c3136c1d5441876a1aa0",
-      "sizeBytes": 21456205
+      "url": "https://github.com/youkdonghun/Sprache/releases/download/v1.38.9/Sprache-Windows-Setup-1.38.9-google-x64.exe",
+      "fileName": "Sprache-Windows-Setup-1.38.9-google-x64.exe",
+      "sha256": "ead55c40699742c8bf7bc84f6728f7cb45b22664f15f852f4051223f6e92919d",
+      "sizeBytes": 21451326
     },
     "pwa": {
       "kind": "web",
