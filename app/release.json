@@ -1,26 +1,26 @@
 {
   "schemaVersion": 1,
-  "version": "1.38.1",
-  "buildNumber": 69,
-  "publishedAt": "2026-09-02T02:04:54.905871+00:00",
-  "title": "Sprache 1.38.1",
+  "version": "1.38.2",
+  "buildNumber": 70,
+  "publishedAt": "2026-09-02T04:03:31.140154+00:00",
+  "title": "Sprache 1.38.2",
   "notes": [
-    "Android에서 최신 APK를 앱 안에서 다시 받을 수 있습니다.",
-    "자료함에서 단어와 문장의 발음을 바로 들을 수 있습니다.",
-    "빠른 연속 재생을 정리해 음성이 겹치거나 깨지는 현상을 막았습니다."
+    "첫 학습 설정을 6단계에서 2단계로 줄였습니다.",
+    "홈에서 다음 학습과 핵심 바로가기를 먼저 보여 줍니다.",
+    "통계·최근 자료·동기화·예약 학습은 필요할 때 펼쳐서 볼 수 있습니다."
   ],
-  "releasePageUrl": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.1",
+  "releasePageUrl": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.2",
   "artifacts": {
     "android": {
       "kind": "apk",
-      "url": "https://github.com/youkdonghun/Sprache/releases/download/v1.38.1/Sprache-Android-1.38.1-google-debug-signed.apk",
-      "fileName": "Sprache-Android-1.38.1-google-debug-signed.apk",
-      "sha256": "8dc0b396fcdbcef9c43429386efa3b3e540aabd39ae48dd1a51253271eb374c7",
-      "sizeBytes": 107715217
+      "url": "https://github.com/youkdonghun/Sprache/releases/download/v1.38.2/Sprache-Android-1.38.2-google-debug-signed.apk",
+      "fileName": "Sprache-Android-1.38.2-google-debug-signed.apk",
+      "sha256": "f1ffe7a89f75522155f75a85458f45ce9d8dda358b09c052891e0889a55e5904",
+      "sizeBytes": 107698829
     },
     "windows": {
       "kind": "releasePage",
-      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.1"
+      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.2"
     },
     "pwa": {
       "kind": "web",
@@ -28,11 +28,11 @@
     },
     "macos": {
       "kind": "releasePage",
-      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.1"
+      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.2"
     },
     "ios": {
       "kind": "releasePage",
-      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.1"
+      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.2"
     }
   }
 }
