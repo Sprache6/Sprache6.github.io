@@ -1,39 +1,42 @@
 {
   "schemaVersion": 1,
-  "version": "1.38.7",
-  "buildNumber": 75,
-  "publishedAt": "2026-09-02T12:20:13.018401+00:00",
-  "title": "Sprache 1.38.7",
+  "version": "1.38.8",
+  "buildNumber": 76,
+  "publishedAt": "2026-09-02T14:10:02.593332+00:00",
+  "title": "Sprache 1.38.8",
   "notes": [
-    "GitHub 카탈로그에 영어·일본어·독일어·프랑스어·스페인어·중국어 TUFS 생활 핵심 언어팩 6개를 실제로 등록했습니다.",
-    "언어팩은 앱 내장 어휘와 중복을 제외했으며 크기·SHA-256·형식·라이선스를 확인한 뒤 가져오기 검토 화면으로 연결됩니다.",
-    "백그라운드·앱 복귀·자동 재시도 Drive 동기화는 조용히 처리하고, 로그인이나 사용자가 누른 동기화만 화면에 표시합니다.",
-    "학습 완료 화면은 Drive 대기 메시지 대신 기기 저장 완료만 간단히 보여 줍니다."
+    "기본 학습은 뜻풀이, 뜻 보고 단어 선택, 문장 맞추기 세 가지로 간단하게 정리했습니다.",
+    "추천, 게임, 미션과 맞춤 학습은 더 많은 학습 방식 안에서 필요할 때만 펼칠 수 있습니다.",
+    "설정 첫 화면은 핵심 항목만 보이고 세부 기능은 각 항목 안에서 확인하도록 정리했습니다.",
+    "앱 정보에서 Android APK와 iPhone PWA 설치 링크를 시스템 공유창으로 함께 보낼 수 있습니다."
   ],
-  "releasePageUrl": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.7",
+  "releasePageUrl": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.8",
   "artifacts": {
     "android": {
       "kind": "apk",
-      "url": "https://github.com/youkdonghun/Sprache/releases/download/v1.38.7/Sprache-Android-1.38.7-google-debug-signed.apk",
-      "fileName": "Sprache-Android-1.38.7-google-debug-signed.apk",
-      "sha256": "7a757f888020d482cae7d219cf0f2f557b4ac58c556b413f1fb0b2514b176d08",
-      "sizeBytes": 108125309
+      "url": "https://github.com/youkdonghun/Sprache/releases/download/v1.38.8/Sprache-Android-1.38.8.apk",
+      "fileName": "Sprache-Android-1.38.8.apk",
+      "sha256": "734100d80052ea881b4203dacbd2706e0da406d4975a8f7e8ed44b39596f6e89",
+      "sizeBytes": 108125177
     },
     "windows": {
-      "kind": "releasePage",
-      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.7"
+      "kind": "installer",
+      "url": "https://github.com/youkdonghun/Sprache/releases/download/v1.38.8/Sprache-Windows-Setup-1.38.8-google-x64.exe",
+      "fileName": "Sprache-Windows-Setup-1.38.8-google-x64.exe",
+      "sha256": "837b4a3f4b878ac78ff41c08c3791ec03cb63af005e1c3136c1d5441876a1aa0",
+      "sizeBytes": 21456205
     },
     "pwa": {
       "kind": "web",
       "url": "https://sprache6.github.io/app/"
     },
     "macos": {
-      "kind": "releasePage",
-      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.7"
+      "kind": "web",
+      "url": "https://sprache6.github.io/app/"
     },
     "ios": {
-      "kind": "releasePage",
-      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.7"
+      "kind": "web",
+      "url": "https://sprache6.github.io/app/"
     }
   }
 }
