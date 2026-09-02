@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "version": "1.38.0",
+  "buildNumber": 68,
+  "publishedAt": "2026-09-02T01:04:17.8645314Z",
+  "title": "Sprache 1.38.0",
+  "notes": [
+    "앱 안에서 새 버전을 확인하고 바로 설치할 수 있습니다.",
+    "다운로드 파일의 크기와 SHA-256을 확인한 뒤에만 설치합니다.",
+    "업데이트 확인은 사용자가 버튼을 누를 때만 실행됩니다."
+  ],
+  "releasePageUrl": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.0",
+  "artifacts": {
+    "windows": {
+      "kind": "installer",
+      "url": "https://github.com/youkdonghun/Sprache/releases/download/v1.38.0/Sprache-Windows-Setup-1.38.0-google-x64.exe",
+      "fileName": "Sprache-Windows-Setup-1.38.0-google-x64.exe",
+      "sha256": "9083943d065b16de69544ed4650a84179ced2d9fdbdc4dba21c4fe00ff00a118",
+      "sizeBytes": 21397891
+    },
+    "android": {
+      "kind": "apk",
+      "url": "https://github.com/youkdonghun/Sprache/releases/download/v1.38.0/Sprache-Android-1.38.0-google-debug-signed.apk",
+      "fileName": "Sprache-Android-1.38.0-google-debug-signed.apk",
+      "sha256": "03acce360fdf3bd80af648a2eb209c57aa42f26c1eab2caf300c002cffabb571",
+      "sizeBytes": 107715333
+    },
+    "pwa": {
+      "kind": "web",
+      "url": "https://sprache6.github.io/app/"
+    },
+    "macos": {
+      "kind": "releasePage",
+      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.0"
+    },
+    "ios": {
+      "kind": "releasePage",
+      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.0"
+    }
+  }
+}
