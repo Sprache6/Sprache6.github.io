@@ -1,26 +1,26 @@
 {
   "schemaVersion": 1,
-  "version": "1.38.3",
-  "buildNumber": 71,
-  "publishedAt": "2026-09-02T05:34:26.814430+00:00",
-  "title": "Sprache 1.38.3",
+  "version": "1.38.4",
+  "buildNumber": 72,
+  "publishedAt": "2026-09-02T06:46:10.625798+00:00",
+  "title": "Sprache 1.38.4",
   "notes": [
-    "추천 학습은 복잡한 설정 없이 바로 시작하고, 필요할 때만 세부 조건을 바꿀 수 있습니다.",
-    "자동 Google Drive 동기화는 조용히 처리하고, 사용자가 직접 동기화할 때만 진행 상태를 보여 줍니다.",
-    "다른 언어에서 진행하던 퀴즈가 현재 언어의 새 퀴즈 시작을 막지 않도록 분리했습니다."
+    "퀴즈 설정과 저장 일정이 현재 언어키에만 적용되는지 화면에서 바로 확인할 수 있습니다.",
+    "문제 방식, 범위, 난이도, 출제 순서와 문제 수 설정을 간결한 선택창으로 통합했습니다.",
+    "빠른 설정, 저장과 예약, 저장 일정 관리를 각각 한 개의 메뉴로 정리했습니다."
   ],
-  "releasePageUrl": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.3",
+  "releasePageUrl": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.4",
   "artifacts": {
     "android": {
       "kind": "apk",
-      "url": "https://github.com/youkdonghun/Sprache/releases/download/v1.38.3/Sprache-Android-1.38.3-google-debug-signed.apk",
-      "fileName": "Sprache-Android-1.38.3-google-debug-signed.apk",
-      "sha256": "748199a872b1b99187f312aa32f8b6a63154179a19922fd7ac41bc09ba743728",
-      "sizeBytes": 107715209
+      "url": "https://github.com/youkdonghun/Sprache/releases/download/v1.38.4/Sprache-Android-1.38.4-google-debug-signed.apk",
+      "fileName": "Sprache-Android-1.38.4-google-debug-signed.apk",
+      "sha256": "95e84ab0b384b47c4bfdc81262da9e65a6a2427698c3fdf79c016aceaa0f11ad",
+      "sizeBytes": 107715529
     },
     "windows": {
       "kind": "releasePage",
-      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.3"
+      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.4"
     },
     "pwa": {
       "kind": "web",
@@ -28,11 +28,11 @@
     },
     "macos": {
       "kind": "releasePage",
-      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.3"
+      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.4"
     },
     "ios": {
       "kind": "releasePage",
-      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.3"
+      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.4"
     }
   }
 }
