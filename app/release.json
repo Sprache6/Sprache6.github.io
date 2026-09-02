@@ -1,26 +1,27 @@
 {
   "schemaVersion": 1,
-  "version": "1.38.4",
-  "buildNumber": 72,
-  "publishedAt": "2026-09-02T06:46:10.625798+00:00",
-  "title": "Sprache 1.38.4",
+  "version": "1.38.5",
+  "buildNumber": 73,
+  "publishedAt": "2026-09-02T08:44:10.952398+00:00",
+  "title": "Sprache 1.38.5",
   "notes": [
-    "퀴즈 설정과 저장 일정이 현재 언어키에만 적용되는지 화면에서 바로 확인할 수 있습니다.",
-    "문제 방식, 범위, 난이도, 출제 순서와 문제 수 설정을 간결한 선택창으로 통합했습니다.",
-    "빠른 설정, 저장과 예약, 저장 일정 관리를 각각 한 개의 메뉴로 정리했습니다."
+    "학습 설정은 방식·자료·문제 수만 고르면 바로 시작할 수 있고 세부 조건은 필요할 때만 펼칩니다.",
+    "앱을 다시 열면 새 버전을 한 번 확인하며, 설정과 안내창에서 최신 Android APK 링크를 공유할 수 있습니다.",
+    "자료실 상단을 추가·표로 수정·더보기로 정리하고 기본 제공 자료도 표에서 함께 편집할 수 있습니다.",
+    "여섯 학습 언어의 기본 문장을 언어별 100개로 늘리고 읽기와 문장 배열 정보를 함께 보강했습니다."
   ],
-  "releasePageUrl": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.4",
+  "releasePageUrl": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.5",
   "artifacts": {
     "android": {
       "kind": "apk",
-      "url": "https://github.com/youkdonghun/Sprache/releases/download/v1.38.4/Sprache-Android-1.38.4-google-debug-signed.apk",
-      "fileName": "Sprache-Android-1.38.4-google-debug-signed.apk",
-      "sha256": "95e84ab0b384b47c4bfdc81262da9e65a6a2427698c3fdf79c016aceaa0f11ad",
-      "sizeBytes": 107715529
+      "url": "https://github.com/youkdonghun/Sprache/releases/download/v1.38.5/Sprache-Android-1.38.5-google-debug-signed.apk",
+      "fileName": "Sprache-Android-1.38.5-google-debug-signed.apk",
+      "sha256": "4b315a550dca69b63fdd8aac56f9ef9aeac104ac95381861a5889a4c6a2d92ca",
+      "sizeBytes": 107781141
     },
     "windows": {
       "kind": "releasePage",
-      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.4"
+      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.5"
     },
     "pwa": {
       "kind": "web",
@@ -28,11 +29,11 @@
     },
     "macos": {
       "kind": "releasePage",
-      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.4"
+      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.5"
     },
     "ios": {
       "kind": "releasePage",
-      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.4"
+      "url": "https://github.com/youkdonghun/Sprache/releases/tag/v1.38.5"
     }
   }
 }
