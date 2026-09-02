@@ -1,0 +1,108 @@
+name: Deploy Sprache PWA
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_ref:
+        description: Public Sprache tag or branch to deploy
+        required: true
+        default: main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sprache-pwa-production
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Check out the Pages repository
+        uses: actions/checkout@v4
+        with:
+          path: site
+
+      - name: Check out the requested Sprache source
+        uses: actions/checkout@v4
+        with:
+          repository: youkdonghun/Sprache
+          ref: ${{ inputs.source_ref }}
+          path: source
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.44.8"
+          channel: stable
+          cache: true
+
+      - name: Read and verify the version
+        id: version
+        shell: bash
+        run: |
+          set -euo pipefail
+          version_line="$(grep -E '^version: [0-9]+\.[0-9]+\.[0-9]+\+[0-9]+$' source/apps/client/pubspec.yaml)"
+          full_version="${version_line#version: }"
+          build_number="${full_version##*+}"
+          version="${full_version%%+*}"
+          if [[ "${{ inputs.source_ref }}" == v* && "${{ inputs.source_ref }}" != "v$version" ]]; then
+            echo "Source ref ${{ inputs.source_ref }} does not match v$version." >&2
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "build_number=$build_number" >> "$GITHUB_OUTPUT"
+
+      - name: Build the production PWA
+        working-directory: source/apps/client
+        shell: bash
+        env:
+          GOOGLE_WEB_CLIENT_ID: ${{ secrets.GOOGLE_WEB_CLIENT_ID }}
+        run: |
+          set -euo pipefail
+          test -n "$GOOGLE_WEB_CLIENT_ID"
+          flutter pub get
+          flutter analyze
+          flutter build web --release --base-href /app/ \
+            --dart-define=APP_ENV=production \
+            --dart-define=ENABLE_MOCK_MODE=false \
+            --dart-define="APP_VERSION=${{ steps.version.outputs.version }}" \
+            --dart-define="RELEASE_BUILD_NUMBER=${{ steps.version.outputs.build_number }}" \
+            --dart-define=PRIVACY_POLICY_URL=https://sprache6.github.io/privacy/ \
+            --dart-define="GOOGLE_WEB_CLIENT_ID=$GOOGLE_WEB_CLIENT_ID"
+
+      - name: Publish the exact web bundle and update manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -d site/app
+          test -f source/apps/client/build/web/index.html
+          rsync -a --delete source/apps/client/build/web/ site/app/
+          curl --fail --location --silent --show-error \
+            "https://github.com/youkdonghun/Sprache/releases/download/v${{ steps.version.outputs.version }}/release.json" \
+            --output site/app/release.json
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          expected = "${{ steps.version.outputs.version }}"
+          web_version = json.loads(Path("site/app/version.json").read_text(encoding="utf-8"))
+          release = json.loads(Path("site/app/release.json").read_text(encoding="utf-8"))
+          if web_version.get("version") != expected or release.get("version") != expected:
+              raise SystemExit("Published version metadata does not match the requested source.")
+          PY
+
+      - name: Commit and push the PWA
+        shell: bash
+        run: |
+          set -euo pipefail
+          git -C site config user.name github-actions[bot]
+          git -C site config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git -C site add app
+          if git -C site diff --cached --quiet; then
+            echo "The requested PWA is already deployed."
+            exit 0
+          fi
+          git -C site commit -m "Deploy Sprache ${{ steps.version.outputs.version }} PWA"
+          git -C site push origin HEAD:main
